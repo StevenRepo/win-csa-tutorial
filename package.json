@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "node index.js",
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --runInBand",
+    "coverage": "npm test -- --coverage"
   },
   "repository": {
     "type": "git",
@@ -16,5 +20,19 @@
   "bugs": {
     "url": "https://github.com/StevenRepo/win-csa-tutorial/issues"
   },
-  "homepage": "https://github.com/StevenRepo/win-csa-tutorial#readme"
+  "homepage": "https://github.com/StevenRepo/win-csa-tutorial#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "cross-env": "^10.0.0",
+    "jest": "^30.1.3",
+    "supertest": "^7.1.4"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {}
+  }
 }
+
