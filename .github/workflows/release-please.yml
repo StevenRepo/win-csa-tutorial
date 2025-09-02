@@ -1,6 +1,12 @@
+name: release-please
+
 on:
   push:
     branches: [ main ]
+
+permissions:
+  contents: write
+  pull-requests: write
 
 jobs:
   release:
@@ -10,4 +16,5 @@ jobs:
         with:
           release-type: node
           package-name: win-csa-tutorial
+          path: .
 
