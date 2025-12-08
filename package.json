@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/StevenRepo/win-csa-tutorial#readme",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.2.1"
   },
   "devDependencies": {
     "@types/jest": "^30.0.0",
